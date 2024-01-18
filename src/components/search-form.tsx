@@ -6,9 +6,12 @@ import { useState } from 'react';
 export default function SearchForm() {
   const [searchText, setSearchText] = useState('');
   const router = useRouter();
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (!searchText) return;
+
     router.push(`/events/${searchText}`);
   };
 
