@@ -1,5 +1,6 @@
 'use client';
 
+import { getEvents } from '@/lib/server-utils';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
